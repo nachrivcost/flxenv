@@ -12,17 +12,17 @@ Before installing flxenv, make sure you have Python and pip installed on your sy
 
 To install Flux Version Manager, run the following command:
 
-pip install flxenv
+```pip install flxenv``` 
 
 After installing flxenv, you need to add the directory where the Flux binaries are stored to your $PATH variable. This ensures that you can run Flux from any terminal session.
 
 ### For Bash Users:
-echo 'export PATH="$HOME/flux/bin:$PATH"' >> ~/.bashrc
-source ~/.bashrc
+```echo 'export PATH="$HOME/flux/bin:$PATH"' >> ~/.bashrc``` 
+```source ~/.bashrc``` 
 
 ### For Zsh Users:
-echo 'export PATH="$HOME/flux/bin:$PATH"' >> ~/.zshrc
-source ~/.zshrc
+```echo 'export PATH="$HOME/flux/bin:$PATH"' >> ~/.zshrc``` 
+```source ~/.zshrc``` 
 
 ## Usage
 
