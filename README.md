@@ -18,10 +18,12 @@ After installing flxenv, you need to add the directory where the Flux binaries a
 
 ### For Bash Users:
 ```echo 'export PATH="$HOME/flux/bin:$PATH"' >> ~/.bashrc``` 
+
 ```source ~/.bashrc``` 
 
 ### For Zsh Users:
 ```echo 'export PATH="$HOME/flux/bin:$PATH"' >> ~/.zshrc``` 
+
 ```source ~/.zshrc``` 
 
 ## Usage
