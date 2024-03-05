@@ -20,7 +20,20 @@ def get_operating_system():
 
 # Returns the architecture
 def get_architecture():
-    return platform.machine().lower()
+    # Obtener la arquitectura del sistema
+    arch = platform.machine().lower()
+    
+    # Clasificar la arquitectura
+    if arch in ['arm', 'armv6l', 'armv7l']:
+        arch = 'arm'
+    elif arch in ['arm64', 'aarch64', 'armv8l']:
+        arch = 'arm64'
+    elif arch in ['amd64', 'x86_64']:
+        arch = 'amd64'
+    else:
+        raise ValueError(f"Unsupported architecture {arch}")
+    
+    return arch
 
 # Constructs the download URL for the release
 def get_github_download_url(release: str, so: str, arch: str):
